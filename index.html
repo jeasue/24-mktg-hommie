@@ -63,9 +63,48 @@
             <th>3월</th>
           </tr>
         </thead>
-        <tbody></tbody>
-        <tfoot></tfoot>
+        <tbody>
+          <tr>
+            <td>남남수</td>
+            <td>우채국 아저씨</td>
+            <td>설날 특집</td>
+          </tr>
+          <tr>
+            <td rowspan="2">수학학원원장 논란
+            <td>아세요?</td>
+            <td>게시물 3개</td>
+          </tr>
+          <tr>
+            <td>ㅇㅇ 알어</td>
+            <td>종합모음집</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">조회수 합계</td>
+            <td>1,653,436회</td>
+          </tr>
+        </tfoot>
       </table>
+    </section>
+    <!-- form  -->
+    <section>
+     <form action="/signup" method="post">
+       <p>닉네임</p>
+       <input name="username" type="text" maxlength="10">
+       <datalist id="name">
+         <!-- 아이디는 이걸로밖에 못만듦 -->
+         <option value="남남수"></option>
+       </datalist>
+       <label for="u-email">이메일</label>
+       <input id="u-email" name="email" type="email" maxlength="20">
+       <label for="u-pw">비밀번호</label>
+       <input id="u-pw" name="password" type="password" maxlength="20"">
+       <label for="u-birth">생년월일</label>
+       <input id="u-birth" name="birthday" type="data">
+       <input type="submit">
+       <button type="reset">촉이와(초기화라는 뜻)</button>
+     </form>
     </section>
   </main>
   <aside>
