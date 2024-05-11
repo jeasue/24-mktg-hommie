@@ -31,7 +31,7 @@
     </nav>
   
   </header>
-  <main> 
+  <main style="width: 500px; margin: 0 auto;"> 
     <section>
       <article id = "top"></article>
       <h1>웃긴게시글</h1>
@@ -117,6 +117,49 @@
        <input type="submit">
        <button type="reset">촉이와(초기화라는 뜻)</button>
      </form>
+    </section>
+    <style>
+      .div-square {
+        width: 30px;
+        height: 30px;
+      }
+      .sq-pd {
+        padding: 10px 20px 30px 40px;
+        padding-top: 30px;
+      }
+      .sq-mg {
+        margin: 10px 20px 30px 40px;
+        margin-top: 30px;
+      }
+      .div-center {
+        margin: 0px auto;
+        width: 25%;
+      }
+    </style>
+    <section>
+      <div class="div-square sq-pd" style="background-color: yellow;">1</div>
+      <div class="div-square sq-pd sq-mg" style="background-color: green;">2</div>
+      <div class="div-square" style="background-color: blue;">3</div>
+      <div class="div-square div-center" style="background-color: purple;">4</div>
+    </section>
+    <style>
+     .flex-container {
+     display: flex;
+     width:266px;
+     height: 120px;
+     /* flex-direction: row;
+     flex-wrap: nowrap; */
+     flex-flow: column nowrap;
+     }
+     .flex-box {width: 100px; height:100px; text-align:center;}
+     .bg-red {background-color: red;}
+     .bg-blue {background-color: blue;}
+     .bg-gray {background-color: gray;}
+    </style>
+    <section class="flex-container">
+     <article class="flex-box bg-red">1</article>
+     <article class="flex-box bg-blue">2</article>
+     <article class="flex-box bg-gray">3</article>
     </section>
   </main>
   <aside>
